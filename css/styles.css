@@ -4,6 +4,7 @@
   --color-primary: #4d41c0;
   --white: #fff;
   --textgray: #4a4a4a;
+  --text-light-gray:#AAAAAA;
 }
 * {
   box-sizing: border-box;
@@ -26,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav h1 {
+nav #h1-header {
   font-size: 24px;
   font-weight: 700;
 }
@@ -64,6 +65,12 @@ a:hover {
   width: 100%;
   border-radius: 8px 8px 0px 0px;
 }
+.dsmovie-contact-container:hover, .dsmovie-card:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    width: 100%;
+    height: 100%;;
+}
 .dsmovie-card-description {
   background-color: var(--white);
   padding: 10px 20px 20px 20px;
@@ -93,7 +100,69 @@ a:hover {
   width: 180px;
   margin-top: 40px;
 }
+.dsmovie-card-form {
+    width: 100%;
+  }
+  .dsmovie-card-form img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .form-control {
+      height: 40%;
+  }
+.dsmovie-btn-form,
+.dsmovie-btn-form:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  width: 180px;
+  border: 0;
+}
 .dsmovie-form-container {
   padding: 40px 0;
-  max-width: 320px;
+  max-width: 420px;
 }
+.dsmovie-form-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0 0 8px 8px; 
+    padding: 40px;
+}
+.dsmovie-form {
+    width: 100%;
+}
+.dsmovie-form-description h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.dsmovie-form-description h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+.dsmovie-form-group {
+    margin-bottom: 10px;
+}
+.dsmovie-form-group label {
+    font-size: 12px;
+    color: var(--text-light-gray);
+}
+.dsmovie-form-btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+}
+.dsmovie-form-btn-container .dsmovie-btn-form {
+    margin-top: 20px;
+}
+
